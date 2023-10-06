@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;700;900&display=swap');
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho-menu-link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size:1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.menu{
+    display: flex;
+    padding: 6% 15%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.texto{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.texto-h1{
+    font-size:2.25rem;
+    font-family: var(--fonte-principal);
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+.texto-p1{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+.botao-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px   ;
+}
+.botao-menu-titulo{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size:1.5rem;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border: 2px solid #22D4FD;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    padding: 21.5px 0;
+}
+
+.botao:hover{
+    background-color: var(--cor-hover);
+}
+.imagem_joana{
+    width: 50%;
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width:1200px){
+    .menu{
+        flex-direction: column-reverse;
+        padding:5%;
+    }
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+    
+    }
+    .texto{
+        width: auto;
+    }
+}
